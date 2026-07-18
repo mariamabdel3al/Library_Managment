@@ -1,0 +1,14 @@
+.heart{
+    transform: scale(1.9);
+    margin-right: 10px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.star{
+    color: rgb(231, 196, 3);
+    cursor: pointer;
+}
+.stars{
+    transform: scale(1.2);
+}
