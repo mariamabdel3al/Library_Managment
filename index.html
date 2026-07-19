@@ -12,34 +12,38 @@
 <body>
 
 <!-- nav bar -->
-<nav class="navbar navbar-expand-lg bg-black fixed-top ">
+<nav class="navbar navbar-expand-lg fixed-top p-0" style="background-color: rgba(0, 0, 0, 0.77);" >
   <div class="container-fluid ">
-    <a class="navbar-brand text-white" href="#">Library</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="logo navbar-brand text-white" href="#">Library</a>
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown ">
-      <ul class="navbar-nav ">
+    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link text-white" aria-current="page" href="#">Home</a>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link active text-white" href="index.html">Catalog</a>
+          <a class="nav-link text-white active " href="index.html">Catalog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="contactus.html">ContactUs</a>
+          <a class="nav-link text-white" href="#">Fav Books</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="favbooks.html">Fav Books</a>
+          <a class="nav-link text-white" href="#">Contact Us</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link text-white  rounded-3" href="#">Login/register</a>
+        </li>
+
       </ul>
     </div>
   </div>
-</nav>
-  
+</nav>  
+
  <!-- background image -->
-<div class="background-catalog w-100"></div>
+<div class="background-catalog w-100 d-flex align-items-center"></div>
 
 <!-- search -->
 <div class="container position-relative" >
@@ -51,22 +55,19 @@
   </div>
 </div>
 
+
 <!-- categories -->
 <div class="navigator container w-75 mt-5">
   <div class="row">
     <div class="col-6">
       <select class="w-100 p-2 border border-secondary rounded-2 bg-black text-white" id="categorySelect">
-      
     </select>
     </div>
     <div class="col-6 mt-1">
       <select class="w-100 p-2 border border-secondary rounded-2 bg-black text-white" id="authorSelect">
     </select>
     </div>
-  </div>
-    
-    
-  
+  </div> 
 </div>
 
 
@@ -85,12 +86,8 @@
           </div>
   </div>
 </div>
-
-
-
-
-
     <script src="js/catalog.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 

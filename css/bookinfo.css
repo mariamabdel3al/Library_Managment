@@ -12,3 +12,30 @@
 .stars{
     transform: scale(1.2);
 }
+
+.stars {
+  display: flex;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.star {
+  color: #d9d9df;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.star.filled {
+  color: #f5a623;
+}
+.fa-star{
+    color: #f5a623;
+}
+
+.progress-bar{
+    overflow: hidden;
+    direction: ltr;
+}
+.progress{
+    padding: 0;
+   
+}

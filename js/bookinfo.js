@@ -17,3 +17,29 @@ document.getElementById('closeheart').addEventListener('click', function () {
     document.getElementById('openheart').classList.remove('d-none')
     document.getElementById('closeheart').classList.add('d-none')
 })
+
+
+
+
+
+
+document.querySelectorAll('.stars').forEach(container => {
+  const stars = container.querySelectorAll('.star');
+
+  stars.forEach((star, index) => {
+    star.addEventListener('click', () => {
+      const selectedRating = index + 1;
+
+      stars.forEach((s, i) => {
+        if (i < selectedRating) {
+          s.classList.remove('fa-regular');
+          s.classList.add('fa-solid', 'filled');
+        } else {
+          s.classList.remove('fa-solid', 'filled');
+          s.classList.add('fa-regular');
+        }
+      });
+
+    });
+  });
+});
