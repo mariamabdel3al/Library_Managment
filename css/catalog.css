@@ -64,13 +64,18 @@ select,option{
 
 }
 
-.footer i{
+.footer {
+    background-color: #000000d4;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+  }
+  .footer i {
     transform: scale(1.5);
     color: rgb(124, 123, 123);
     cursor: pointer;
-
-}
-.footer i:hover{
-   color: white;
-
-}
+    margin: 0 10px;
+  }
+  .footer i:hover {
+    color: white;
+  }
