@@ -1,7 +1,6 @@
 body {
     background-color: #111;
     color: #fff;
-    font-family: 'Segoe UI', Arial, sans-serif;
   }
   .navbar {
     background-color: #000;
@@ -10,12 +9,7 @@ body {
     width: 80%;
     margin: 0 auto;
   }
-  .logo
-  {
-    font-size: 32px;
-    color: rgb(136, 10, 10);
-    font-weight: 900;
-  }
+
   .hero {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.6)),
@@ -126,5 +120,6 @@ body {
 .active{
     background-color: rgba(60, 60, 60, 0.882) !important;
     border-radius: 5px;
+    border:1px solid rgb(109, 107, 107) !important;
 
 }

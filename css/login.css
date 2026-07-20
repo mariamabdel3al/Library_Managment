@@ -1,44 +1,16 @@
-
-.search-icon{
-    left:-10px;
-    border-radius: 5px 0px 0px 5px;
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.bookimg{
-    height:330px;
-    transition: all 0.1s ease;
+.card {
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(239, 1, 1, 0.1);
 }
-.books{
-    width: 80%;
-}
-.background-catalog{
-    background-image: url('../images/0.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 500px;
-}
-.info{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.792),rgba(0, 0, 0, 0.578));
-}
-
-select,option{
-    cursor: pointer;
-    
-}
-
-
-.bookimg:hover {
-    cursor: pointer;
-    filter:brightness(0.8);
-}
-
-.infoBtn{
-    box-shadow: 0px 0px 3px 1px #979797;
-}
-
-.navigator{
-    width: 80%;
-}
-
 
 
 .logo{
@@ -63,6 +35,8 @@ select,option{
     border-radius: 5px;
     border:1px solid rgb(109, 107, 107);
 }
+
+
 
 .footer {
     background-color: #000000d4;
