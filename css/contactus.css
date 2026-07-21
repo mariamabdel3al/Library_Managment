@@ -31,8 +31,6 @@ html {
 
 body {
 
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
-
     font-weight: 400;
 
     overflow-x: hidden;
@@ -58,24 +56,14 @@ section {
 
 }
 
-.library-navbar {
 
-    background-color: var(--navbar-bg);
-
-}
-
-.library-navbar .container-fluid {
-
-    width: var(--nav-width);
-
-}
 
 .logo{
-    font-weight: 800;
-    letter-spacing: 2.5px;
+    font-weight: 800 !important;
+    letter-spacing: 2.5px !important;
 }
 .logo::first-letter{
-    font-size: 32px;
+    font-size: 32px !important;
     color: rgb(136, 10, 10);
     font-weight: 900;
     
@@ -99,16 +87,6 @@ section {
 .login-link {
 
     background-color: rgba(255,255,255,.08);
-
-}
-.navbar-toggler {
-
-    border: 1px solid rgba(255,255,255,.5);
-
-}
-.navbar-toggler-icon {
-
-    filter: invert(1);
 
 }
 
