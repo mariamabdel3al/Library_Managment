@@ -112,10 +112,8 @@ section {
 
 }
 
-.section-pad {
-
-    padding: var(--section-padding) 0;
-
+.section-pad{
+    margin-top: 55px;
 }
 
 .contact-wrap {
@@ -126,7 +124,6 @@ section {
 
 .contact-title {
 
-    font-size: 2rem;
 
     color: var(--main-color);
 

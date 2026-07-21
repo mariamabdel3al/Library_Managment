@@ -1,16 +1,19 @@
- <html  >
+<!DOCTYPE html>
+<html>
 <head>
-     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/login.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         .hidden {
             display: none !important;
         }
     </style>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
-    <nav class="navbar navbar-expand-lg fixed-top p-0" style="background-color: rgba(0, 0, 0, 0.77);" >
+   <nav class="navbar navbar-expand-lg fixed-top p-0 " style="background-color: rgba(0, 0, 0, 0.77);" >
   <div class="container-fluid ">
     <a class="logo navbar-brand text-white" href="#">Library</a>
     <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,14 +22,14 @@
     <div class="collapse navbar-collapse " id="navbarNavDropdown">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item my-1">
-          <a class="px-3 nav-link text-white" aria-current="page" href="index.html">Home</a>
+          <a class="px-3 nav-link text-white" href="index.html">Home</a>
         </li>
         
         <li class="nav-item my-1">
-          <a class="px-3  nav-link text-white  " href="catalog.html">Catalog</a>
+          <a class="px-3  nav-link text-white " href="catalog.html">Catalog</a>
         </li>
         <li class="nav-item my-1">
-          <a class="px-3 nav-link text-white" href="favbook.html">Fav Books</a>
+          <a class="px-3 nav-link text-white " aria-current="page" href="favbook.html">Fav Books</a>
         </li>
         <li class="nav-item my-1">
           <a class="px-3 nav-link text-white" href="contactus.html">Contact Us</a>
@@ -39,44 +42,65 @@
     </div>
   </div>
 </nav>  
-    <div class="card">
-        <!-- Login Section -->
-        <div id="loginsection" class="bg-light p-4">
-            <h3 class="text-center mb-4">Login</h3>
-            <form id="loginform">
-                <div class="mb-3">
-                    <label class="form-label">Email </label>
-                    <input type="email" id="loginemail" class="form-control" placeholder="example@gmail.com" required>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Password</label>
-                    <input type="password" id="loginpassword" class="form-control" placeholder="Enter your password" required>
-                </div>
-                <button type="submit" class="btn  btn-primary  w-100">Login</button>
-            </form>
-            <p class="text-center mt-3 small">Don't have an account? <a href="#" id="toregister">Sign Up</a></p>
-        </div>
+    <div class="container py-5 flex-grow-1 d-flex align-items-center justify-content-center">
+        <div class="row justify-content-center w-100">
+             <div class="col-12 col-md-6 col-lg-4">
+                
+                <div class="card shadow-sm border-0 mx-auto">
+                     <div id="loginsection" class="p-4">
+                        <h3 class="text-center mb-4">Login</h3>
+                        <form id="loginform">
+                            <div class="mb-3">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" id="loginemail" class="form-control" placeholder=" Enter your email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Password</label>
+                                <input type="password" id="loginpassword" class="form-control" placeholder=" Enter your password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Login</button>
+                        </form>
+                        <p class="text-center mt-3 small">Don't have an account? <a href="#" id="toregister">Sign Up</a></p>
+                    </div>
 
-        <!-- Register Section -->
-        <div id="registersection" class="hidden p-4">
-            <h3 class="text-center mb-4">Create Account</h3>
-            <form id="registerform">
-                <div class="mb-3">
-                    <label class="form-label">Email </label>
-                    <input type="email" id="registeremail" class="form-control" placeholder="example@gmail.com" required>
+                     <div id="registersection" class="hidden p-4">
+                        <h3 class="text-center mb-4">Create Account</h3>
+                        <form id="registerform" >
+                            <div class="mb-3">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" id="registeremail" class="form-control" placeholder=" Enter your email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Password</label>
+                                <input type="password" id="registerpassword" class="form-control" placeholder="enter new password" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Re-Password</label>
+                                <input type="password" id="registerpassword" class="form-control" placeholder="re-password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Register</button>
+                        </form>
+                        <p class="text-center mt-3 small">Already have an account? <a href="#" id="tologin">Login</a></p>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label class="form-label">Password</label>
-                    <input type="password" id="registerpassword" class="form-control" placeholder="Enter new password" required>
-                </div>
-                <button type="submit" class="btn btn-primary w-100">Register</button>
-            </form>
-            <p class="text-center mt-3 small">Already have an account? <a href="#" id="tologin">Login</a></p>
+
+            </div>
         </div>
     </div>
 
+ <div class="footer">
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-instagram"></i>
+  <i class="fa-brands fa-twitter"></i>
+  <i class="fa-brands fa-whatsapp"></i>
+
+</div>
 
     <script src="js/login.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
+
+

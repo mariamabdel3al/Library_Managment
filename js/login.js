@@ -1,4 +1,3 @@
-// Selecting elements with the corrected English IDs
 const loginsection = document.getElementById("loginsection");
 const registersection = document.getElementById("registersection");
 const toregister = document.getElementById("toregister");
@@ -6,21 +5,18 @@ const tologin = document.getElementById("tologin");
 const registerform = document.getElementById("registerform");
 const loginform = document.getElementById("loginform");
 
-// Switch to Register form
 toregister.onclick = function (e) {
     e.preventDefault();
     loginsection.classList.add("hidden");
     registersection.classList.remove("hidden");
 };
 
-// Switch to Login form
 tologin.onclick = function (e) {
     e.preventDefault();
     registersection.classList.add("hidden");
     loginsection.classList.remove("hidden");
 };
 
-// Handle Registration form submission
 registerform.onsubmit = function (e) {
     e.preventDefault();
 
@@ -38,7 +34,6 @@ registerform.onsubmit = function (e) {
     loginsection.classList.remove("hidden");
 };
 
-// Handle Login form submission
 loginform.onsubmit = function (e) {
     e.preventDefault();
 
