@@ -153,7 +153,7 @@ let books = [];
 let categories = [];
 let authors = [];
 async function getbooks() {
-    let response = await fetch("https://openlibrary.org/search.json?q=bestseller&limit=100");
+    let response = await fetch("https://openlibrary.org/search.json?q=bestseller&limit=200");
     let data = await response.json();
 
     let docs = data.docs;
