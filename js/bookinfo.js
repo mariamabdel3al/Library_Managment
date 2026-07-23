@@ -42,23 +42,28 @@ document.getElementById('closeheart').addEventListener('click', function () {
 })
 
 
-document.querySelectorAll('.stars').forEach(container => {
-  const stars = container.querySelectorAll('.star');
+let starReview = document.querySelectorAll('.starreview');
+let rate = 'bookRating_' + book.id;
+let commentsKey = 'bookComments_' + book.id;
+let savedRating = localStorage.getItem(rate) || 0;
+printStars(savedRating);
 
-  stars.forEach((star, index) => {
-    star.addEventListener('click', () => {
-      const selectedRating = index + 1;
-
-      stars.forEach((s, i) => {
-        if (i < selectedRating) {
-          s.classList.remove('fa-regular');
-          s.classList.add('fa-solid', 'filled');
-        } else {
-          s.classList.remove('fa-solid', 'filled');
-          s.classList.add('fa-regular');
-        }
-      });
-
-    });
+for (let i = 0; i < starReview.length; i++) {
+  starReview[i].addEventListener("click", function (e) {
+    let index = e.target.getAttribute("data-value");
+    localStorage.setItem(rate, index);
+    printStars(index);
   });
-});
+}
+
+function printStars(index) {
+  for (let j = 0; j < starReview.length; j++) {
+    if (j < index) {
+      starReview[j].classList.remove('fa-regular');
+      starReview[j].classList.add('fa-solid', 'filled');
+    } else {
+      starReview[j].classList.add('fa-regular');
+      starReview[j].classList.remove('fa-solid', 'filled');
+    }
+  }
+}
